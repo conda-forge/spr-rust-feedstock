@@ -11,5 +11,4 @@ conda_build:
 conda_forge_output_validation: true
 provider:
   linux_aarch64: azure
-  linux_ppc64le: azure
 test: native_and_emulated
