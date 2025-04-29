@@ -6,9 +6,9 @@ channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
+libgit2:
+- '1.9'
 rust_compiler:
 - rust
-rust_compiler_version:
-- '1.79'
 target_platform:
 - win-64
