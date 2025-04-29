@@ -1,5 +1,5 @@
 context:
-  version: "1.3.6"
+  version: 1.3.6
 
 package:
   name: spr-rust
@@ -18,8 +18,11 @@ requirements:
     - ${{ compiler('c') }}
     - ${{ stdlib('c') }}
     - cargo-bundle-licenses
+    - perl
+    - pkg-config
   host:
     - libgit2
+    - openssl
 
 tests:
   - script:
