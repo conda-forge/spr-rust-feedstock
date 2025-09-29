@@ -1,5 +1,5 @@
 context:
-  version: 1.3.5
+  version: "1.3.7"
 
 package:
   name: spr-rust
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/getcord/spr/archive/v${{ version }}.tar.gz
-  sha256: d1f53f4222fd9916c9edc0457bfe04bac66d9ff60a7c0e7a0c4519317c3f3fb8
+  sha256: 6b48524abfecea16e0e7a131f0c44027375a80577cde43355f54928c4921ed6c
 
 build:
   number: 0
@@ -18,6 +18,8 @@ requirements:
     - ${{ compiler('c') }}
     - ${{ stdlib('c') }}
     - cargo-bundle-licenses
+  host:
+    - openssl
 
 tests:
   - script:
